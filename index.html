@@ -48,12 +48,28 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
+
+        // =============== popup ===============
+        window.onload = function () {
+            document.getElementById("popup").style.display = "block";
+        }
+
+        function hidePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
     </script>
 
     <!-- <title>This my personal page | Rahmat Alfianto an Software Quality Assurance</title> -->
 </head>
 
 <body>
+
+    <!-- ============ popup window ============= -->
+    <div id="popup">
+        <button id="close-button" onclick="hidePopup()">Close</button>
+        <img src="assets/img/popup.jpg">
+    </div>
+
     <!--=============== HEADER ===============-->
     <header class="profile container">
         <!-- Theme button -->

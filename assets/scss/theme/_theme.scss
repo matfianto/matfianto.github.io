@@ -49,3 +49,33 @@ body.dark-theme {
 .dark-theme::-webkit-scrollbar-thumb:hover {
     background-color: hsl(var(--hue), 8%, 32%);
 }
+
+// ===== popup =====
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // background-color: white;
+    // border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+}
+
+// #popup img {
+//     max-width: 250%;
+//     max-height: 250%;
+    // justify-content: center;
+    // align-items: center;
+    // margin: auto;
+    // display: block;
+// }
+
+#close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
